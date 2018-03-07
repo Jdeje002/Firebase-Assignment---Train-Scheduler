@@ -43,10 +43,13 @@ firebase.initializeApp(config);
 
   })
 
-  // $("#clear").on("click", function(newTrain){
-  //   var dataBase = firebase.database().ref()
-  //   dataBase.remove()
-  // })
+  $("#clear").on("click", function(newTrain){
+    var dataBase = firebase.database().ref()
+    $("#tableBody > tbody").empty();
+
+    dataBase.remove()
+   
+  })
 
   dataBase.ref().on("child_added", function (childSnapshot, prevChildKey) {
     console.log(childSnapshot.val());
