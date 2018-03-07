@@ -1,3 +1,10 @@
-.trainForm{
-    border-style: solid;
+.jumbotron {
+    padding:20px;
+    margin-bottom: 0px;
+    opacity: 0.2;
+    color: #fff;
+    background: #000 
+}
+.display-3{
+    opacity: 1;
 }
