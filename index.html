@@ -1,101 +1,116 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Choo Choo</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-      
-<!-- intro banner -->
-            
-    <div class="container"></div>
+<head>
+  <title>Choo Choo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- intro banner -->
+  
+  <div class="container"></div>
       <div class="jumbotron" style="text-align:justify"> 
         <h2 class="display-3">I Think I Can</h2>
           <p> Catch A Ride </p>
       </div>
-      
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-3 train-input">
-                     
-            <form id = "trainForm">
-                    <div class="form-group">
-                      <label >Train Name:</label>
-                      <input class="form-control"id="input-TrainName">
-                    </div>
-                    <div class="form-group">
-                      <label >Destination:</label>
-                      <input class="form-control"id="input-Destination">
-                    </div>
-                    <div class="form-group">
-                      <label> First Train Time: (hh:mm, Military Time)</label>
-                      <input class="form-control" id="input-TrainTime">
-                    </div>
-                    <div class="form-group">
-                      <label>Frequency (min)</label>
-                      <input class="form-control" id="input-Frequency">
-                    </div>
-                  </form>
-                  <div >
-                  <button class="btn btn-success" id="submit">Submit</button>
-                  <button class="btn btn-danger" id="clear">Clear All</button>
-                  </div>
 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 train-input">
+
+        <form id="trainForm">
+          <div class="form-group">
+            <label>Train Name:</label>
+            <input class="form-control" id="input-TrainName">
+          </div>
+          <div class="form-group">
+            <label>Destination:</label>
+            <input class="form-control" id="input-Destination">
+          </div>
+          <div class="form-group">
+            <label> First Train Time: (hh:mm, Military Time)</label>
+            <input class="form-control" id="input-TrainTime">
+          </div>
+          <div class="form-group">
+            <label>Frequency (min)</label>
+            <input class="form-control" id="input-Frequency">
+          </div>
+        </form>
+        <div>
+          <button class="btn btn-success" id="submit">Submit</button>
+          <button class="btn btn-danger" id="clear">Clear All</button>
         </div>
-        
-        <div class="col-smd-9">
-            <table class="table">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                      <h3 class="panel-title"><strong>Choo Choo</strong></h3>
-                    </div>
-                    <div class="panel-body">
-                      <table class="table table-hover" id='tableBody'>
-                        <thead>
-                          <tr>
-                            <th>Train Name</th>
-                            <th>Destination</th>
-                            <th>First Train</th>
-                            <th>Frequency</th>
-                            <th>Minutes away </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+
+      </div>
+
+      <div class="col-smd-9">
+        <table class="table">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <strong>Choo Choo</strong>
+              </h3>
+            </div>
+            <div class="panel-body">
+              <table class="table table-hover" id='tableBody'>
                 <thead>
-                  
-
-          
-                  
-                    
-        </thead>
-        </div>
+                  <tr>
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>First Train</th>
+                    <th>Frequency</th>
+                    <th>Minutes away </th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <thead>
+          </thead>
+      </div>
     </div>
-              
-</div>
-</div>        
-<div>  
+
+    <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <!--Footer Bottom-->
+              <p class="text-xs-center">&copy; Copyright 2016 - City of USA.  All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </div>
+  <div>
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <script src = "assets/java/js.js"></script>
+    <script src="assets/java/js.js"></script>
 
-  </body>
+</body>
 
 </html>

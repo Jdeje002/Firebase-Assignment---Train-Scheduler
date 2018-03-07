@@ -1,14 +1,31 @@
+
+body{
+    background-image: url("../img/traintracks.jpg")
+}
+#tableBody{
+    background-color: whitesmoke;
+    margin-bottom: 25px;
+}
+
 .jumbotron {
     padding:20px;
     margin-bottom: 0px;
     opacity: 0.2;
     color: #fff;
     background: #000;
-    
 }
-body{
-    background-image: url("../img/traintracks.jpg")
-}
-#tableBody{
-    background-color: white
-}
+
+.footer-bottom{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   opacity: .2;
+   color: white;
+   text-align: center;
+   
+    }
+
+
+   
